@@ -9,10 +9,16 @@
         content="This webpage is a mock up of the Mission Statement for Brigham Young University-Idaho that I am doing for an assignment.">
     <meta name="author" content="Derek Peterson">
     <link rel="stylesheet" href="styles.css">
+    <script src="mission.js" defer></script>
 </head>
 
 <body>
     <div class="content">
+        <label for="theme-select">Choose a theme:</label>
+        <select name="theme" id="theme-select">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
         <header class="title">
             <h1>MISSION STATEMENT</h1>
             <h2>BRIGHAM YOUNG UNIVERSITY-IDAHO</h2>
@@ -36,7 +42,10 @@
                 </ol>
             </section>
         </main>
-        <footer> <img src="byui-logo_blue.webp" alt="BYU-Idaho Logo" class="logo"></footer>
+        <footer>
+            <img src="byui-logo_blue.webp" alt="BYU-Idaho Logo" class="logo">
+        </footer>
+
     </div>
 </body>
 

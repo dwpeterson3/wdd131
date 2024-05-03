@@ -13,6 +13,12 @@ h2 {
     font-size: 15px;
     
 }
+.dark h2 {
+    color: #4f9acf
+}
+.dark {
+    color:white
+}
 
 main {
     /* text-align: center; */
@@ -58,4 +64,9 @@ li {
 hr,h2 {
     margin: 0px;
     
+}
+
+.dark {
+    background-color: #333;
+
 }
