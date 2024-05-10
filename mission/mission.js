@@ -12,13 +12,19 @@ function changeTheme() {
         var logo = document.querySelector('.logo');
         logo.src = "byui-logo_white.png";
 
+        var h2 = document.querySelector('h2');
+        h2.style.color =  "#4f9acf";
+
     }
     else {
         document.body.classList.remove('dark');
         
         var logo = document.querySelector('.logo');
         logo.src = "byui-logo_blue.webp";
-    }
+
+        var h2 = document.querySelector('h2');
+        h2.style.color = "#006EB6"
+        }
 }
 
 const themeSelector = document.getElementById('theme-select');
