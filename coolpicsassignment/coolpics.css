@@ -64,6 +64,37 @@ img {
     align-items: center;
 
 }
+.hide {
+    display: none;
+}
+
+.viewer {
+    position:fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.75) ;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    display: none;
+}
+
+.close-viewer{
+    color: white;
+    background: transparent;
+    justify-self: end;
+    margin: 10px;
+    grid-row: 1;
+
+
+}
+.viewer img {
+    max-height: 100%;
+    max-width: 100%;
+}
 @media screen and (min-width:700px) {
     .gallery {
         grid-template-columns: 1fr 1fr;
@@ -75,7 +106,7 @@ img {
 
     }
 
-    button{
+    .menu-button{
         display: none;
     }
 
@@ -84,6 +115,10 @@ img {
         gap: 96px;
         justify-content: center;
 
+    }
+    .hide {
+        display:flex;
+        justify-content: center;
     }
     
 }
