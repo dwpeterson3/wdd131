@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
  #creditCardForm {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    max-width: 10px; 
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 25px 210px 1fr 1fr;
+    gap: 15px;
+    max-width: 510px;
  }
  button {
-    width: 75px;
+    width: 100px;
     padding: 7px;
     border-radius: 6px;
     grid-column: 3 / 4;
@@ -20,9 +20,8 @@
     width: 390px;
     height: 250px;
     border-radius: 6px;
-    padding: 20px 30px 0;
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     font-weight: 300;
     color: black;
@@ -32,8 +31,47 @@
     grid-row: 2 / 4;
     z-index: 1;
  }
- .creditCardFront{ 
+ .creditCardFront{
+    display: grid;
+    grid-template-columns: 225px 120px;
+    grid-template-rows: 63px 63px 63px;
+    gap: 15px;  
     grid-row: 1 / 3;
     grid-column: 1 / 3;
-    z-index: 2; 
+    padding: 15px;
+    z-index: 2;
+
+ }
+ #amount {
+   margin-top: 25px;
+   margin-left: 15 px; 
+ }
+ #cardNumber {
+   grid-column: 1 / 3;
+   display: grid;
+   margin: 0px;
+ }
+ #fullName {
+   grid-column: 1 / 2;
+   display: grid;
+   margin: 0px; 
+ }
+ #expirationDate {
+   display: grid;
+   grid-template-columns: 60px 60px; 
+   grid-column: 2 / 3;
+   margin: 0px;
+    
+ }
+ #expirationMonth {
+   grid-column: 1 / 2;
+   margin-right: 5px;
+ }
+ #expirationYear {
+   grid-column: 2 / 3;
+   margin-left: 5px;
+ }
+ #card-image {
+   justify-self: end;
+   align-self: center;
  }
