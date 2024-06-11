@@ -27,9 +27,13 @@
     color: black;
  }
  .creditCardBack {
+    display: grid;
+    grid-template-columns: 295px 95px;
+    grid-template-rows: 1fr 1fr;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
     z-index: 1;
+    max-width: 390px;
  }
  .creditCardFront{
     display: grid;
@@ -54,7 +58,7 @@
  #fullName {
    grid-column: 1 / 2;
    display: grid;
-   margin: 0px; 
+   margin: 0px;
  }
  #expirationDate {
    display: grid;
@@ -74,4 +78,16 @@
  #card-image {
    justify-self: end;
    align-self: center;
+ }
+ #cvc-cvv{
+   grid-column: 2/ 3;
+   grid-row: 2 / 3;
+   align-self: end;
+   margin-right:15px;
+ }
+ #blackStripe {
+   background-color: black;
+   max-height: 50px;
+   grid-column: 1 / 3;
+   margin-top: 25px;
  }
