@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function(){
         participantCount++;
         const participanthtml = participantTemplate(participantCount);
         const participantsFieldset = document.querySelector('.participants');
-        participantsFieldset.insertAdjacentHTML('beforeend', participanthtml);
+        participantsFieldset.insertAdjacentHTML('beforebegin', participanthtml);
     
     });
 });
