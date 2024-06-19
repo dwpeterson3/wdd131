@@ -51,3 +51,25 @@ document.addEventListener('DOMContentLoaded', function(){
     
     });
 });
+
+function submitForm(event) {
+    event.preventDefault();
+
+    const totalFeesAmount = totalFees();
+
+}
+
+successTemplate(info) {
+
+}
+
+function totalFees() {
+    let feeElements = document.querySelectorAll("[id^=fee]");
+    console.log(feeElements);
+    feeElements = [...feeElements];
+
+    totalFeesAmount = feeElements.reduce((total, feeElement))
+
+    return totalFeesAmount; 
+
+}

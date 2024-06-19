@@ -183,3 +183,10 @@ button:hover {
         width: 100%;
     }
 }
+@media screen and (min-width: 1000px) {
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
