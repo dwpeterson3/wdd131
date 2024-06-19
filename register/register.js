@@ -1,3 +1,5 @@
+import { participantTemplate, successTemplate } from "./Templates";
+
 document.addEventListener('DOMContentLoaded', function(){
     const addParticipant = document.getElementById('add');
     let participantCount = 1; 
@@ -59,7 +61,8 @@ function submitForm(event) {
 
 }
 
-successTemplate(info) {
+function successTemplate(info) {
+
 
 }
 
