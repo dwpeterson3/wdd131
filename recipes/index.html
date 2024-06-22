@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="recipes.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Derek Peterson">
+    <meta name="description" content="Recipe book">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/recipe-book.png" alt="Clip art picture of a Recipe Book with a Chef Hat on it.">
+        <h1>RECIPE BOOK</h1>
+    </header>
+    <main>
+        <form class="search-bar">
+            <p>
+                <input type="text" id="search-bar" placeholder="Find a recipe" name="search-bar">
+            </p>
+            <button type="button">
+                <img src="images/search.svg" alt="Magnifying Glass Image as Button">
+            </button>
+        </form>
+        <article class="recipes">
+            <section class="image">
+                <p class="dish-image">
+                    <img src="images/apple-crisp.jpg" alt="Apple Crisp with Ice Cream melting">
+                </p>
+            </section>
+            <section class="tag">
+                <p class="menu-type">dessert</p>
+                <p class="tag2">tag2</p>
+            </section>
+            <section class="name">
+                <p class="name">Apple Crisp</p>
+                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+            </section>
+            <section class="description">
+                <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik -
+            Flaticon</a>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
