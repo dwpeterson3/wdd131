@@ -68,24 +68,24 @@ function compareFunction(a, b) {
     // a must be equal to b
     return 0;
 }
-//   const anotherSort = simpleList.sort(compareFunction)
-const anotherSort = simpleList.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+  const anotherSort = simpleList.sort(compareFunction)
+// const anotherSort = simpleList.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
 
 function searchList(list, query) {
-    function searchCallback(item) {
+    function stringContains(item) {
+        // if query is found inside the item return true
+
         return (
             item.name.toLowerCase().includes(query.toLowerCase()) ||
-            item.description.toLowerCase().includes(query.toLowerCase())
-        ); 
+            item.description.toLowerCase().includes(query.toLowerCase()) ||
+            item.tags.find((tag)=> tag.toLowerCase().includes(query.toLowerCase()))
+        
+        );
+    
     }
-    const filtered = list.filter(searchCallback);
-
-    const sorted = filtered.sort((a,b) => a.distance > b.distance);
-    return sorted; 
-    // return list.filter(searchCallback); 
+    return list.filter(stringContains);
 }
-console.log(searchList(hikes, "yellowstone"));
+
+const result = searchList(hikes, 'al'); 
+console.log(result);
 console.log(searchList(hikes, "moderate")); 
-// console.log(searchList(simpleList, "b"));
-// console.log(searchList(simpleList, "an"));
-// console.log(searchList(hikes), "al")

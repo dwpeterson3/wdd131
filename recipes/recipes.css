@@ -113,16 +113,20 @@ h1 {
 img {
     max-width: 100%;
 }
-@media screen and (max-width:600px) {
+.description {
+    display:none; 
+}
+/* @media screen and (max-width:600px) {
     .description {
         display:none; 
-    }
+    } */
 @media screen and (min-width:600px) {
     article {
         flex-direction: row;
     }
-}
-
+    .description {
+        display: block;  
+    } 
 }
 @media (max-width:960px) {
     * {
