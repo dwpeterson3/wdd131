@@ -17,7 +17,7 @@
     <meta name="description" content="Recipe book">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer></script>
 </head>
 
 <body>
@@ -26,15 +26,15 @@
         <h1>Recipe Book</h1>
     </header>
     <main>
-        <form class="search-bar">
+        <form id="search-form" class="search-bar">
             <p>
-                <input type="text" id="search-bar" placeholder="Find a recipe" name="search-bar">
+                <input type="text" id="search-input" placeholder="Find a recipe" name="search-bar">
             </p>
-            <button type="button">
+            <button type="submit">
                 <img src="images/search.svg" alt="Magnifying Glass Image as Button">
             </button>
         </form>
-        <article class="recipes">
+        <article id="recipe-output" class="recipes">
             <section class="image">
                 <p class="dish-image">
                     <img src="images/apple-crisp.jpg" alt="Apple Crisp with Ice Cream melting">
