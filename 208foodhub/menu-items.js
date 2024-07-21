@@ -33,8 +33,8 @@ const menuItems = [
         item: "Basic B",
         price: "$13",
         description: "Lettuce, tomato, onion and cheese",
-        imgSrc: "images/coming-soon.webp",
-        imgAlt: "This menu item picture is coming soon"
+        imgSrc: "images/basicb.webp",
+        imgAlt: "Basic B Burger"
     },
     {
         item: "Oklahoma Melt",
@@ -47,8 +47,8 @@ const menuItems = [
         item: "O.G. (classic)",
         price: "$9",
         description: "Cheddar cheese",
-        imgSrc: "images/coming-soon.webp",
-        imgAlt: "This menu item picture is coming soon"
+        imgSrc: "images/og-macandcheese.webp",
+        imgAlt: "The O.G. Mac and Cheese"
     },
     {
         item: "Piggy Smalls",
