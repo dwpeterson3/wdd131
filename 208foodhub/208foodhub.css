@@ -46,10 +46,13 @@
     width: 100px; 
 
   }
+  .hello h1, h2 {
+    border-bottom: solid var(--accent1-color) 2px;
+  }
   .nav { 
     display: none;
     flex-direction: column;
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
     position: absolute;
     top: 100%;
     right: 20px;
@@ -136,6 +139,11 @@
   .menu {
     border-top: solid var(--accent1-color) 2px;
     border-bottom: solid var(--accent1-color) 2px;
+    padding: 25px; 
+  }
+  .aboutus {
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width:960px){
@@ -186,5 +194,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px; 
+    }
+    .aboutus {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
   }
