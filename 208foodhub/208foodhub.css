@@ -145,7 +145,21 @@
     display: flex;
     flex-direction: column;
   }
-
+  .contactus {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  form {
+    max-width: 800px;
+  }
+  fieldset {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);;
+    border-radius: 6px;
+  }
   @media (min-width:960px){
     header {
       flex-direction: row;
@@ -198,5 +212,23 @@
     .aboutus {
       display: grid;
       grid-template-columns: 1fr 1fr;
+    }
+    .contactus {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .hello h1 {
+      border-bottom: none;
+    }
+    .menu-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .menu-container {
+      padding-right: 20px;
+    }
+    .schedule {
+      padding-left: 20px;
     }
   }
