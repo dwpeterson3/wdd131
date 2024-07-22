@@ -42,6 +42,10 @@
     color: var(--accent1-color); 
     position: relative;
   }
+  main {
+    border: solid var(--accent2-color) 5px;
+    border-radius: 5px;
+  }
   .logo img {
     width: 100px; 
 
@@ -90,12 +94,16 @@
     background: var(--accent1-color);
     margin: 4px 0; 
   }
+  .greeting {
+    border-bottom: solid var(--accent2-color) 5px;
+    border-radius: 5px;
+  }
   .greeting img {
     max-width: 100%;
     height: auto;
     max-height: 500px;
     width: auto;
-    object-fit: contain;  
+    object-fit: contain; 
   }
   section {
     display: flex; 
@@ -136,9 +144,8 @@
   .menu-header {
     text-align: center;
   }
-  .menu {
-    border-top: solid var(--accent1-color) 2px;
-    border-bottom: solid var(--accent1-color) 2px;
+  .menu .picture {
+    border-top: solid var(--accent2-color) 5px;
     padding: 25px; 
   }
   .aboutus {
@@ -230,5 +237,11 @@
     }
     .schedule {
       padding-left: 20px;
+    }
+    .picture {
+      border-top: solid var(--accent2-color) 5px;
+    }
+    .details {
+      border-top: solid var(--accent2-color) 5px;
     }
   }
